@@ -37,6 +37,8 @@ src/
 ```
 
 > **[View Detailed File Structure Documentation](./FILE_STRUCTURE.md)** - complete breakdown of all files and directories.
+>
+> Live Demo **[Click here](https://rehab-ai-alpha.vercel.app/)**
 
 ## 🛠️ Setup Instructions
 
