@@ -20,7 +20,7 @@ const NeuralChatModal = ({ isOpen, onClose, chatPartnerId = null, chatPartnerNam
 
     const aiWelcomeMessage = useMemo(() => ({
         id: 'ai-welcome',
-        text: `Hello ${userData?.name?.split(' ')[0] || 'Warrior'}, I'm Gati's Neural Assistant. How can I help you ${userData?.userType === 'doctor' ? 'analyze patient progress' : 'with your recovery'} today?`,
+        text: `Hello ${userData?.name?.split(' ')[0] || 'Warrior'}, I'm Rehab AI's Neural Assistant. How can I help you ${userData?.userType === 'doctor' ? 'analyze patient progress' : 'with your recovery'} today?`,
         sender: 'ai',
         timestamp: new Date()
     }), [userData]);
@@ -69,7 +69,7 @@ const NeuralChatModal = ({ isOpen, onClose, chatPartnerId = null, chatPartnerNam
                         sender: m.sender === 'ai' ? 'ai' : 'user',
                         text: m.text
                     }));
-                    aiResponseText = await getGeminiResponse(`You are Gati's Neural Assistant. ${userData?.userType === 'doctor' ? 'Focus on clinical data analysis and patient monitoring.' : 'Focus on recovery and encouragement.'}`, history);
+                    aiResponseText = await getGeminiResponse(`You are Rehab AI's Neural Assistant. ${userData?.userType === 'doctor' ? 'Focus on clinical data analysis and patient monitoring.' : 'Focus on recovery and encouragement.'}`, history);
                 } catch (geminiError) {
                     console.error('[NeuralChat] Gemini API error:', geminiError);
                     aiResponseText = "I'm analyzing the data. Based on the current trends, progress is consistent with the recovery roadmap.";
@@ -117,7 +117,7 @@ const NeuralChatModal = ({ isOpen, onClose, chatPartnerId = null, chatPartnerNam
                             {isAIChat ? <Bot className="w-6 h-6 text-white" /> : <MessageSquare className="w-6 h-6 text-white" />}
                         </div>
                         <div>
-                            <h2 className="text-lg font-black leading-none mb-1">{isAIChat ? 'Gati AI' : chatPartnerName}</h2>
+                            <h2 className="text-lg font-black leading-none mb-1">{isAIChat ? 'Rehab AI' : chatPartnerName}</h2>
                             <p className="text-[10px] font-black text-blue-400 uppercase tracking-widest leading-none">
                                 {isAIChat ? 'Digital Assistant' : 'Patient Communication'}
                             </p>
@@ -153,7 +153,7 @@ const NeuralChatModal = ({ isOpen, onClose, chatPartnerId = null, chatPartnerNam
                         <div className="flex justify-start">
                             <div className="bg-white border border-slate-100 rounded-[1.5rem] rounded-tl-none px-4 py-3 flex items-center gap-2 shadow-sm">
                                 <Loader2 className="w-4 h-4 text-blue-600 animate-spin" />
-                                <span className="text-xs text-slate-500 font-bold">Gati is thinking...</span>
+                                <span className="text-xs text-slate-500 font-bold">Rehab AI is thinking...</span>
                             </div>
                         </div>
                     )}

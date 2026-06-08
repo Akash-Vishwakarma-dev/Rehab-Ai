@@ -29,7 +29,7 @@ const ExerciseHistory = () => {
       ROM: s.rangeOfMotion,
       Duration: s.duration
     }));
-    downloadCSV(exportData, `Gati_Rehab_History_${new Date().toISOString().split('T')[0]}.csv`);
+    downloadCSV(exportData, `RehabAI_History_${new Date().toISOString().split('T')[0]}.csv`);
   };
 
   useEffect(() => {

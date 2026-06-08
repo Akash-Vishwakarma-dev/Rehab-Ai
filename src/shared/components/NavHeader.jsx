@@ -42,7 +42,7 @@ const NavHeader = memo(({ userType = 'patient', doctorProfile = null, onSettings
           >
             <div className="relative scale-[0.8] sm:scale-100">
               <div className="w-10 h-10 bg-white rounded-xl flex items-center justify-center shadow-lg shadow-slate-200 border border-slate-100 p-1 group-hover:rotate-6 transition-transform">
-                <img src="/logo.png" alt="Gati Logo" className="w-full h-full object-contain" />
+                <img src="/logo.png" alt="Rehab AI Logo" className="w-full h-full object-contain" />
               </div>
               <div className="absolute -top-1 -right-1 w-3 h-3 bg-blue-500 rounded-full border-2 border-white shadow-sm flex items-center justify-center">
                 <Zap className="w-2 h-2 text-white fill-current" />
@@ -50,7 +50,7 @@ const NavHeader = memo(({ userType = 'patient', doctorProfile = null, onSettings
             </div>
             <div className="hidden sm:block">
               <h1 className={`${isDark ? 'text-white' : 'text-slate-900'} text-xl sm:text-2xl font-black tracking-tighter leading-none`}>
-                GATI<span className="text-blue-600">REHAB</span>
+                REHAB<span className="text-blue-600">AI</span>
               </h1>
             </div>
           </div>

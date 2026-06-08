@@ -58,7 +58,7 @@ const SchedulerModal = ({ isOpen, onClose, doctorId, patients, onJoinCall }) => 
             // Send notification to patient
             await sendNotification(newAppt.patientId, {
                 title: 'New Session Scheduled',
-                message: `Dr. Gati has scheduled a new ${newAppt.type} session for you on ${new Date(newAppt.date).toLocaleDateString()} at ${newAppt.time}.`,
+                message: `Dr. Rehab AI has scheduled a new ${newAppt.type} session for you on ${new Date(newAppt.date).toLocaleDateString()} at ${newAppt.time}.`,
                 type: 'info'
             });
 

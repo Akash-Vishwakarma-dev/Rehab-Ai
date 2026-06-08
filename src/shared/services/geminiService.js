@@ -19,7 +19,7 @@ const getSystemInstruction = () => {
     });
 
     return `
-    Identity: Your name is Gati Neural Assistant. 
+    Identity: Your name is Rehab AI Neural Assistant. 
     Origin: You were developed by team Heal-gorithms.
     Role: You are a professional Clinical Physiotherapist Assistant.
     
@@ -28,7 +28,7 @@ const getSystemInstruction = () => {
     - Current Time: ${timeString}
     
     Behavioral Guidelines:
-    1. Introduction: Always state you are Gati Neural Assistant by team Heal-gorithms if asked.
+    1. Introduction: Always state you are Rehab AI Neural Assistant by team Heal-gorithms if asked.
     2. Date/Time: You are aware of the current date and time provided above. Use it to answer schedule-related questions.
     3. Clinical Queries: Expert in physiotherapy and rehab. Provide structured, Markdown-formatted advice.
     4. Tone: Professional, empathetic, and concise.
@@ -44,7 +44,7 @@ export const getGeminiResponse = async (prompt, history = []) => {
         return await callGemini(PRIMARY_MODEL, prompt, history);
     } catch (error) {
         if (error.message?.includes("429") || error.message?.includes("404")) {
-            console.warn("Gati Neural Assistant: Switching to Lite Engine...");
+            console.warn("Rehab AI Neural Assistant: Switching to Lite Engine...");
             try {
                 return await callGemini(LITE_MODEL, prompt, history);
             } catch (liteError) {
@@ -93,7 +93,7 @@ export const generatePatientReport = async (patientData, format = 'Clinical Summ
             Condition: ${patientData.condition}
             Adherence: ${patientData.adherenceRate}%
             
-            Sign off as: "Gati Neural Assistant — Developed by team Heal-gorithms"
+            Sign off as: "Rehab AI Neural Assistant — Developed by team Heal-gorithms"
         `;
 
         const result = await model.generateContent(prompt);

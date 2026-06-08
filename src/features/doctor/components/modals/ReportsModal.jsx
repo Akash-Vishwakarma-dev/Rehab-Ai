@@ -17,7 +17,7 @@ const ReportsModal = ({ isOpen, onClose, patients }) => {
         const a = document.createElement('a');
         a.href = url;
         const patient = patients.find(p => p.id === selectedPatientId);
-        a.download = `Gati_Report_${patient?.name || 'Patient'}_${new Date().toISOString().split('T')[0]}.txt`;
+        a.download = `RehabAI_Report_${patient?.name || 'Patient'}_${new Date().toISOString().split('T')[0]}.txt`;
         document.body.appendChild(a);
         a.click();
         document.body.removeChild(a);
@@ -56,7 +56,7 @@ const ReportsModal = ({ isOpen, onClose, patients }) => {
             }
         } catch (error) {
             console.error("Report Generation Error:", error);
-            setGeneratedReport("Error generating report. Please check your Gati AI Service connection.");
+            setGeneratedReport("Error generating report. Please check your Rehab AI Service connection.");
         } finally {
             setIsGenerating(false);
         }
@@ -161,7 +161,7 @@ const ReportsModal = ({ isOpen, onClose, patients }) => {
                                     <div className="w-24 h-24 border-4 border-emerald-100 border-t-emerald-600 rounded-full animate-spin"></div>
                                     <Sparkles className="absolute inset-0 m-auto w-8 h-8 text-emerald-600 animate-pulse" />
                                 </div>
-                                <h3 className="text-xl font-black text-slate-900 mb-2">Gati AI is Thinking...</h3>
+                                <h3 className="text-xl font-black text-slate-900 mb-2">Rehab AI is Thinking...</h3>
                                 <p className="text-sm font-bold text-slate-400">Synthesizing clinical data and formatting documents.</p>
                             </div>
                         ) : (

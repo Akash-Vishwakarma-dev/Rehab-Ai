@@ -59,11 +59,11 @@ const PWAInstallPrompt = () => {
 
                     <div className="flex-1 text-center sm:text-left">
                         <div className="flex items-center justify-center sm:justify-start gap-2 mb-1">
-                            <h3 className="text-white font-black text-lg leading-tight">Install Gati Rehab</h3>
+                            <h3 className="text-white font-black text-lg leading-tight">Install Rehab AI</h3>
                             <Sparkles className="w-4 h-4 text-blue-400" />
                         </div>
                         <p className="text-slate-400 text-sm font-bold leading-relaxed">
-                            Add Gati to your home screen for faster access and offline recovery sessions.
+                            Add Rehab AI to your home screen for faster access and offline recovery sessions.
                         </p>
                     </div>
 

@@ -13,7 +13,7 @@ export const useTheme = () => {
 export const ThemeProvider = ({ children }) => {
     const [isDarkMode, setIsDarkMode] = useState(() => {
         // Check localStorage first
-        const saved = localStorage.getItem('gati-theme');
+        const saved = localStorage.getItem('rehab-ai-theme');
         if (saved) return saved === 'dark';
 
         // Check system preference
@@ -29,7 +29,7 @@ export const ThemeProvider = ({ children }) => {
         }
 
         // Save to localStorage
-        localStorage.setItem('gati-theme', isDarkMode ? 'dark' : 'light');
+        localStorage.setItem('rehab-ai-theme', isDarkMode ? 'dark' : 'light');
     }, [isDarkMode]);
 
     const toggleTheme = () => {

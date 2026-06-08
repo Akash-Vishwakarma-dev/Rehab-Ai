@@ -10,9 +10,9 @@ const OnboardingGuide = ({ isOpen, onClose, onComplete }) => {
 
     const steps = [
         {
-            title: 'Welcome to Gati Rehab! 🎉',
+            title: 'Welcome to Rehab AI! 🎉',
             description: 'Your AI-powered physiotherapy companion',
-            content: 'Gati uses advanced AI and computer vision to guide your rehabilitation journey. Let\'s take a quick tour of the key features.',
+            content: 'Rehab AI uses advanced AI and computer vision to guide your rehabilitation journey. Let\'s take a quick tour of the key features.',
             icon: <Check className="w-12 h-12 text-emerald-500" />,
             highlight: null
         },
@@ -56,7 +56,7 @@ const OnboardingGuide = ({ isOpen, onClose, onComplete }) => {
         {
             title: 'Get Support',
             description: 'Connect with your specialist',
-            content: 'Message your physiotherapist, schedule video consultations, and get AI-powered advice 24/7 through the Gati Assistant.',
+            content: 'Message your physiotherapist, schedule video consultations, and get AI-powered advice 24/7 through the Rehab AI Assistant.',
             icon: <MessageSquare className="w-12 h-12 text-blue-500" />,
             highlight: 'support',
             tips: [

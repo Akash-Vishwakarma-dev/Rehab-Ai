@@ -3,7 +3,7 @@ import { useState } from 'react';
 import { X, Video, Shield, PhoneOff, Maximize2 } from 'lucide-react';
 import { useEscapeKey } from '../../hooks/useEscapeKey';
 
-const VideoConsultationModal = ({ isOpen, onClose, roomName = 'GatiRecoverySession' }) => {
+const VideoConsultationModal = ({ isOpen, onClose, roomName = 'RehabAISession' }) => {
   const [loading, setLoading] = useState(true);
 
   // Accessibility: Handle Escape key

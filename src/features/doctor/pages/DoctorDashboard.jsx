@@ -476,7 +476,7 @@ const DoctorDashboard = () => {
                     status={app.status}
                     isDarkMode={isDarkMode}
                     onJoin={app.status === 'confirmed' && app.type === 'Video Call' ? () => {
-                      setSelectedRoom(`Gati_Session_${app.id}`);
+                      setSelectedRoom(`RehabAI_Session_${app.id}`);
                       setVideoOpen(true);
                     } : null}
                   />

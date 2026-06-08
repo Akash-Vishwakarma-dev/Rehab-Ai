@@ -1,12 +1,11 @@
-# Gati Rehab App - AI-Powered Virtual Rehabilitation Assistant
+# Rehab AI App - AI-Powered Virtual Rehabilitation Assistant
 
 A premium Progressive Web Application (PWA) for remote physical therapy using state-of-the-art AI-powered pose detection and real-time clinical monitoring.
 
 ## 🎯 Project Overview
 
-Gati is a sophisticated rehabilitation platform that transforms smartphone cameras into clinical-grade assessment tools. Using MediaPipe AI, it provides real-time biomechanical feedback, range-of-motion (ROM) tracking, and form quality scoring.
+Rehab AI is a sophisticated rehabilitation platform that transforms smartphone cameras into clinical-grade assessment tools. Using MediaPipe AI, it provides real-time biomechanical feedback, range-of-motion (ROM) tracking, and form quality scoring.
 
-**Live Project**: `https://gati.web.app/` (Production environment)
 
 ## 🚀 Tech Stack
 
@@ -78,13 +77,6 @@ firebase deploy
 - **Real-time Sync**: State-of-the-art synchronization ensures trainers see progress the moment it happens.
 - **HIPAA-Ready Architecture**: Data structures designed for medical confidentiality.
 
-## 🔐 Persona Credentials
-
-| Role | Email | Password |
-|------|-------|----------|
-| **Doctor** | `doctor@demo.com` | `Demo123!` |
-| **Patient** | `rajesh@demo.com` | `Demo123!` |
-
 
 ## ✅ Implementation Status
 - [x] **MediaPipe Core**: 30FPS real-time pose landmarker.
@@ -95,4 +87,4 @@ firebase deploy
 
 ---
 
-**Built with ❤️ by Heal-gorithms for the future of digital rehabilitation**
+**Built with ❤️ for the future of digital rehabilitation**

@@ -28,7 +28,7 @@ export const sendNotification = async (recipientId, data) => {
 
         // Also attempt a push notification if permissions are granted
         if (Notification.permission === 'granted') {
-            showPushNotification(data.title || 'Gati Rehab', data.message);
+            showPushNotification(data.title || 'Rehab AI', data.message);
         }
     } catch (error) {
         console.error('[NotificationService] Send error:', error);
@@ -61,7 +61,7 @@ export const showPushNotification = (title, body, icon = '/logo.png') => {
                     icon: icon,
                     badge: icon,
                     vibrate: [200, 100, 200],
-                    tag: 'gati-rehab-alert'
+                    tag: 'rehab-ai-alert'
                 });
             });
         } else {

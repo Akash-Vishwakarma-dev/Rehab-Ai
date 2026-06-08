@@ -177,7 +177,7 @@ const PatientSettingsModal = ({ isOpen, onClose, patientProfile, onSave }) => {
                                                 label="Email"
                                                 value={formData.email}
                                                 onChange={(val) => handleInputChange('email', val)}
-                                                placeholder="nexus@gati.ai"
+                                                placeholder="nexus@rehab.ai"
                                                 type="email"
                                             />
                                             <InputField

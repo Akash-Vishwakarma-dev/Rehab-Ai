@@ -92,7 +92,7 @@ const LandingPage = () => {
               <div className="relative">
                 <div className={`w-12 h-12 rounded-2xl flex items-center justify-center shadow-2xl p-1.5 transition-all duration-300 group-hover:scale-110 group-hover:rotate-3 ${darkMode ? 'bg-gray-800 border border-gray-700' : 'bg-white border border-gray-200'
                   }`}>
-                  <img src="/logo.png" alt="Gati" className="w-full h-full object-contain" />
+                  <img src="/logo.png" alt="Rehab AI" className="w-full h-full object-contain" />
                 </div>
                 <div className="absolute -top-1 -right-1 w-4 h-4 bg-gradient-to-r from-blue-500 to-purple-500 rounded-full border-2 border-white dark:border-gray-900 shadow-lg animate-pulse">
                   <Zap className="w-2.5 h-2.5 text-white absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2" />
@@ -100,7 +100,7 @@ const LandingPage = () => {
               </div>
               <div>
                 <h1 className={`text-2xl font-black tracking-tighter ${darkMode ? 'text-white' : 'text-gray-900'}`}>
-                  GATI<span className="text-blue-600">REHAB</span>
+                  REHAB<span className="text-blue-600">AI</span>
                 </h1>
                 <p className={`text-[8px] font-bold uppercase tracking-[0.3em] ${darkMode ? 'text-gray-500' : 'text-gray-400'}`}>
                   Intelligence Lab
@@ -215,7 +215,7 @@ const LandingPage = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className={`text-4xl sm:text-5xl font-black mb-4 ${darkMode ? 'text-white' : 'text-gray-900'}`}>
-              Why Clinicians Choose Gati
+              Why Clinicians Choose Rehab AI
             </h2>
             <p className={`text-xl ${darkMode ? 'text-gray-400' : 'text-gray-600'}`}>
               Enterprise-grade technology meets clinical excellence
@@ -255,7 +255,7 @@ const LandingPage = () => {
             Ready to Transform Recovery?
           </h2>
           <p className={`text-xl mb-10 ${darkMode ? 'text-gray-300' : 'text-gray-600'}`}>
-            Join thousands of patients and clinicians already using Gati
+            Join thousands of patients and clinicians already using Rehab AI
           </p>
           <button
             onClick={() => navigate('/login', { state: { mode: 'signup' } })}
@@ -277,10 +277,10 @@ const LandingPage = () => {
             <div className="md:col-span-2">
               <div className="flex items-center gap-3 mb-4">
                 <div className="w-10 h-10 bg-white rounded-xl flex items-center justify-center p-1.5">
-                  <img src="/logo.png" alt="Gati" className="w-full h-full object-contain" />
+                  <img src="/logo.png" alt="Rehab AI" className="w-full h-full object-contain" />
                 </div>
                 <div>
-                  <h5 className="text-xl font-black text-white">GATI<span className="text-blue-600">REHAB</span></h5>
+                  <h5 className="text-xl font-black text-white">REHAB<span className="text-blue-600">AI</span></h5>
                   <p className="text-[8px] font-bold text-gray-500 uppercase tracking-wider">Intelligence Lab</p>
                 </div>
               </div>
@@ -298,7 +298,7 @@ const LandingPage = () => {
               <ul className="space-y-2 text-gray-400">
                 <li><button onClick={() => navigate('/login')} className="hover:text-white transition-colors">Patient Portal</button></li>
                 <li><button onClick={() => navigate('/login')} className="hover:text-white transition-colors">Doctor Dashboard</button></li>
-                <li><a href="https://github.com/Heal-gorithms/Gati-rehab" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors flex items-center gap-2">
+                <li><a href="https://github.com/Akash-Vishwakarma-dev/Rehab-Ai" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors flex items-center gap-2">
                   <Github className="w-4 h-4" />
                   GitHub
                 </a></li>
@@ -317,7 +317,7 @@ const LandingPage = () => {
           </div>
 
           <div className="border-t border-gray-800 pt-8 text-center">
-            <p className="text-gray-400 mb-2">© 2026 Gati Rehab. Built with ❤️ for better health outcomes.</p>
+            <p className="text-gray-400 mb-2">© 2026 Rehab AI. Built with ❤️ for better health outcomes.</p>
             <p className="text-sm text-gray-500">
               Made by <a href="https://github.com/Heal-gorithms" target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:text-blue-300 transition-colors">Heal-gorithms</a>
             </p>

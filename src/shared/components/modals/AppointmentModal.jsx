@@ -79,7 +79,7 @@ const AppointmentModal = ({ isOpen, onClose, patientId = null, doctorId = null, 
         patientId: finalPatientId,
         doctorId: finalDoctorId,
         patientName: patientName || (userData?.userType === 'patient' ? userData?.name : 'Patient'),
-        doctorName: doctorName || (userData?.userType === 'doctor' ? userData?.name : 'Dr. Gati'),
+        doctorName: doctorName || (userData?.userType === 'doctor' ? userData?.name : 'Dr. Rehab AI'),
         date: formData.date,
         time: formData.time,
         type: formData.type,
@@ -258,7 +258,7 @@ const AppointmentModal = ({ isOpen, onClose, patientId = null, doctorId = null, 
                           ) : (
                             <button
                               onClick={() => {
-                                onJoinCall?.(`Gati_Session_${app.id}`);
+                                onJoinCall?.(`RehabAI_Session_${app.id}`);
                                 onClose();
                               }}
                               className="px-6 py-2 bg-blue-600 text-white text-[10px] font-black uppercase tracking-widest rounded-xl hover:bg-blue-500 transition-all shadow-[0_0_15px_rgba(37,99,235,0.4)] active:scale-95 flex items-center gap-2"

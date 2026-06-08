@@ -232,11 +232,11 @@ const LoginPage = () => {
           </button>
           <div className="flex justify-center mb-6">
             <div className={`p-3 rounded-2xl ${userType === 'patient' ? (isDarkMode ? 'bg-blue-900/30' : 'bg-blue-50') : userType === 'doctor' ? (isDarkMode ? 'bg-teal-900/30' : 'bg-teal-50') : (isDarkMode ? 'bg-gray-800' : 'bg-slate-100')} transition-colors duration-300`}>
-              <img src="/logo.png" alt="Gati Logo" className="w-16 h-16 object-contain" />
+              <img src="/logo.png" alt="Rehab AI Logo" className="w-16 h-16 object-contain" />
             </div>
           </div>
           <h1 className={`text-3xl font-black tracking-tight mb-1 ${isDarkMode ? 'text-white' : 'text-slate-900'}`}>
-            GATI<span className={`${textColor} transition-colors duration-300`}>REHAB</span>
+            REHAB<span className={`${textColor} transition-colors duration-300`}>AI</span>
           </h1>
           <p className={`${isDarkMode ? 'text-gray-400' : 'text-slate-500'} text-xs font-bold uppercase tracking-widest`}>
             {userType === 'patient' ? 'Patient Recovery Portal' : userType === 'doctor' ? 'Professional Clinical Suite' : 'System Administration'}

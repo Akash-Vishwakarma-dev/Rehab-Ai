@@ -1,9 +1,9 @@
 // Service Worker for PWA offline functionality
 // Optimized for mobile performance and offline experience
 
-const CACHE_NAME = 'gati-rehab-v2';
-const RUNTIME_CACHE = 'gati-runtime-v2';
-const API_CACHE = 'gati-api-v2';
+const CACHE_NAME = 'rehab-ai-v2';
+const RUNTIME_CACHE = 'rehab-ai-runtime-v2';
+const API_CACHE = 'rehab-ai-api-v2';
 
 // Assets to cache on install - Mobile optimized
 const PRECACHE_ASSETS = [
@@ -231,7 +231,7 @@ async function syncOfflineData() {
 // IndexedDB helpers for offline data storage
 async function getOfflineData(storeName) {
   return new Promise((resolve, reject) => {
-    const request = indexedDB.open('gati-offline', 1);
+    const request = indexedDB.open('rehab-ai-offline', 1);
 
     request.onsuccess = (event) => {
       const db = event.target.result;
@@ -249,7 +249,7 @@ async function getOfflineData(storeName) {
 
 async function removeOfflineData(storeName, id) {
   return new Promise((resolve, reject) => {
-    const request = indexedDB.open('gati-offline', 1);
+    const request = indexedDB.open('rehab-ai-offline', 1);
 
     request.onsuccess = (event) => {
       const db = event.target.result;
@@ -270,11 +270,11 @@ self.addEventListener('push', (event) => {
   console.log('[Service Worker] Push notification received');
 
   const options = {
-    body: event.data ? event.data.text() : 'New notification from Gati Rehab',
+    body: event.data ? event.data.text() : 'New notification from Rehab AI',
     icon: '/logo.png',
     badge: '/logo.png',
     vibrate: [200, 100, 200],
-    tag: 'gati-rehab-notification',
+    tag: 'rehab-ai-notification',
     requireInteraction: true,
     actions: [
       {
@@ -289,7 +289,7 @@ self.addEventListener('push', (event) => {
   };
 
   event.waitUntil(
-    self.registration.showNotification('Gati Rehab', options)
+    self.registration.showNotification('Rehab AI', options)
   );
 });
 

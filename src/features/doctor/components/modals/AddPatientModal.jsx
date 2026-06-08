@@ -89,7 +89,7 @@ const AddPatientModal = ({ isOpen, onClose, doctorId }) => {
                                 <>
                                     <h3 className="text-2xl font-black text-slate-900 mb-2">Patient Found & Linked!</h3>
                                     <p className="text-slate-500 font-bold max-w-xs mx-auto">
-                                        This user already has a Gati account. They have been successfully linked to your clinic and will see you in their dashboard.
+                                        This user already has a Rehab AI account. They have been successfully linked to your clinic and will see you in their dashboard.
                                     </p>
                                 </>
                             ) : (

@@ -1,6 +1,6 @@
 {
-  "name": "Gati Rehab - AI Physical Therapy Assistant",
-  "short_name": "Gati Rehab",
+  "name": "Rehab AI - AI Physical Therapy Assistant",
+  "short_name": "Rehab AI",
   "description": "AI-powered virtual rehabilitation assistant for remote physical therapy",
   "start_url": "/",
   "display": "standalone",

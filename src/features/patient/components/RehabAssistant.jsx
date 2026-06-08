@@ -6,7 +6,7 @@ import { getGeminiResponse } from '../../../shared/services/geminiService';
  * Rehab AI Assistant - Chat with AI for health advice
  * Separate from doctor messaging
  */
-const GatiAssistant = ({ isOpen, onClose, patientProfile }) => {
+const RehabAssistant = ({ isOpen, onClose, patientProfile }) => {
     const [messages, setMessages] = useState([
         {
             role: 'assistant',
@@ -174,4 +174,4 @@ User Question: ${userMessage}`;
     );
 };
 
-export default GatiAssistant;
+export default RehabAssistant;

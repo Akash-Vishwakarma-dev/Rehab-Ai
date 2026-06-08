@@ -1,6 +1,6 @@
-# Gati-Rehab Detailed Project Structure
+# Rehab AI Detailed Project Structure
 
-This document provides a comprehensive, file-by-file breakdown of the Gati-Rehab project. It is intended for developers who need to navigate the codebase efficiently.
+This document provides a comprehensive, file-by-file breakdown of the Rehab AI project. It is intended for developers who need to navigate the codebase efficiently.
 
 ## 📂 Root Directory
 Configuration and environment setup.

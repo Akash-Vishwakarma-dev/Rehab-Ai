@@ -51,7 +51,7 @@ const TrendsModal = lazy(() => import('../components/modals/TrendsModal'));
 const VideoConsultationModal = lazy(() => import('../../../shared/components/modals/VideoConsultationModal'));
 const MedicationReminders = lazy(() => import('../components/MedicationReminders'));
 const OnboardingGuide = lazy(() => import('../components/OnboardingGuide'));
-const GatiAssistant = lazy(() => import('../components/GatiAssistant'));
+const RehabAssistant = lazy(() => import('../components/RehabAssistant'));
 import { useAuth } from '../../auth/context/AuthContext';
 import { updateUserProfile } from '../../auth/services/authService';
 import {
@@ -98,7 +98,7 @@ const PatientDashboard = () => {
   const [trendsOpen, setTrendsOpen] = useState(false);
   const [currentDoctor, setCurrentDoctor] = useState(null);
   const [showOnboarding, setShowOnboarding] = useState(false);
-  const [gatiAssistantOpen, setGatiAssistantOpen] = useState(false);
+  const [rehabAssistantOpen, setRehabAssistantOpen] = useState(false);
   const [hasNotificationPermission, setHasNotificationPermission] = useState(Notification.permission === 'granted');
 
   const handleSettingsUpdate = async (data) => {
@@ -142,7 +142,7 @@ const PatientDashboard = () => {
     const granted = await requestPushPermission();
     setHasNotificationPermission(granted);
     if (granted) {
-      showPushNotification("Gati Protocol Active", "You'll receive updates on your recovery roadmap.");
+      showPushNotification("Rehab AI Protocol Active", "You'll receive updates on your recovery roadmap.");
     }
   };
 
@@ -472,7 +472,7 @@ const PatientDashboard = () => {
             </div>
             {todayRoutine.length === 0 && (
               <div className="text-center py-10 bg-slate-50/50 rounded-3xl border border-dashed border-slate-200">
-                <p className="text-slate-500 font-bold">Your routine is currently being updated by {userData?.doctorName || 'Dr. Gati'}.</p>
+                <p className="text-slate-500 font-bold">Your routine is currently being updated by {userData?.doctorName || 'Dr. Rehab AI'}.</p>
               </div>
             )}
           </div>
@@ -598,7 +598,7 @@ const PatientDashboard = () => {
                     {userData?.doctorId ? 'Your Specialist' : 'System Intelligence'}
                   </p>
                   <h3 className="text-3xl font-black text-slate-900 leading-tight">
-                    {currentDoctor?.name || userData?.doctorName || 'Gati AI Digital Specialist'}
+                    {currentDoctor?.name || userData?.doctorName || 'Rehab AI Digital Specialist'}
                   </h3>
                   <p className="text-slate-500 font-bold">
                     {userData?.doctorId ? (currentDoctor?.specialization || 'Professional Rehabilitation Specialist') : 'Autonomous Diagnostic Engine'}
@@ -644,10 +644,10 @@ const PatientDashboard = () => {
                   }
                 </p>
                 <button
-                  onClick={() => setGatiAssistantOpen(true)}
+                  onClick={() => setRehabAssistantOpen(true)}
                   className="w-full sm:w-auto px-10 py-5 bg-gradient-to-r from-blue-600 to-emerald-600 hover:from-blue-700 hover:to-emerald-700 text-white rounded-[2rem] font-black transition-all flex items-center justify-center gap-3 group active:scale-95 shadow-lg"
                 >
-                  <MessageSquare className="w-5 h-5" /> Chat with Gati AI <ArrowRight className="w-5 h-5 transition-transform group-hover:translate-x-1" />
+                  <MessageSquare className="w-5 h-5" /> Chat with Rehab AI <ArrowRight className="w-5 h-5 transition-transform group-hover:translate-x-1" />
                 </button>
               </div>
             </div>
@@ -697,7 +697,7 @@ const PatientDashboard = () => {
         <VideoConsultationModal
           isOpen={videoOpen}
           onClose={() => setVideoOpen(false)}
-          roomName={selectedRoom || `GatiRehab_${user?.uid?.substring(0, 8)}`}
+          roomName={selectedRoom || `RehabAI_${user?.uid?.substring(0, 8)}`}
         />
 
         <TrendsModal
@@ -712,9 +712,9 @@ const PatientDashboard = () => {
           onComplete={handleOnboardingComplete}
         />
 
-        <GatiAssistant
-          isOpen={gatiAssistantOpen}
-          onClose={() => setGatiAssistantOpen(false)}
+        <RehabAssistant
+          isOpen={rehabAssistantOpen}
+          onClose={() => setRehabAssistantOpen(false)}
           patientProfile={{
             injuryType: userData?.injuryType,
             rehabPhase: userData?.rehabPhase,

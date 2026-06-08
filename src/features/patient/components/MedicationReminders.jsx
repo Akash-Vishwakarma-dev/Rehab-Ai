@@ -131,7 +131,7 @@ const MedicationReminders = () => {
     const granted = await requestPushPermission();
     setHasPermission(granted);
     if (granted) {
-      showPushNotification("Gati Notifications Enabled", "You will now receive alerts for exercises and medication.");
+      showPushNotification("Rehab AI Notifications Enabled", "You will now receive alerts for exercises and medication.");
     }
   };
 
